@@ -10,7 +10,7 @@ Bu proje, sistem programlama, ağ güvenliği ve yapay zeka entegrasyonu konular
 - **Hibrit Şifreleme Mimarisi:** Veriler yerelde **AES-256 (GCM)** ile şifrelenir. AES anahtarları ise **RSA-2048** (Public Key) ile şifrelenerek sunucuya iletilir. Bu sayede sunucu tarafında anahtar ele geçirilse bile veriler okunamaz.
 - **Gelişmiş USB/Flash İzleme:** Sisteme takılan taşınabilir sürücüleri anlık olarak tespit eder, içindeki kritik verileri önce güvenli bir `stage` alanına kopyalar ve ardından arka planda buluta senkronize eder.
 - **Dayanıklı Bağlantı Mimarisi:** 
-  - Kısıtlı ağlarda (kurumsal filtreler, MEB vb.) çalışabilmek için özel SSL Context yapılandırması ve sertifika doğrulama bypass mekanizmaları içerir.
+  - Kısıtlı ağlarda çalışabilmek için özel SSL Context yapılandırması ve sertifika doğrulama bypass mekanizmaları içerir.
   - **Cloudflare Workers** tabanlı C2 (Command & Control) yapısı ile yüksek erişilebilirlik sağlar.
 - **Güvenlik ve Gizlilik:** 
   - **Anti-Debug:** Uygulamanın analiz edilmesini zorlaştırmak için debugger kontrolleri içerir.
